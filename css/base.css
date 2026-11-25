@@ -1,0 +1,143 @@
+:root {
+  --bg: #fcf9f2;
+  --bg-alt: #f4ece0;
+  --surface: #ffffff;
+  --text: #1e1813;
+  --muted: #5c5147;
+  --primary: #b45309;
+  --primary-hover: #92400e;
+  --accent: #1f5133;
+  --border: #e5d7c3;
+  --shadow: 0 12px 30px rgba(30, 24, 19, 0.08);
+  --radius: 16px;
+}
+
+body.dark-theme {
+  --bg: #120e0b;
+  --bg-alt: #1b1510;
+  --surface: #231c16;
+  --text: #f7f1e8;
+  --muted: #bfb2a3;
+  --primary: #f59e0b;
+  --primary-hover: #d97706;
+  --accent: #4ade80;
+  --border: #3a2e24;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.42);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+body.lang-en {
+  font-family: "Plus Jakarta Sans", "Hind Siliguri", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.section-head h2 {
+  font-size: clamp(1.6rem, 3.3vw, 2.25rem);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.section-head p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}

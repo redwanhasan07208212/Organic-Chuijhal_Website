@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" rx="20" fill="#F3EFE6" />
+  <path d="M80 260 C180 120, 380 290, 520 130" fill="none" stroke="#854D0E" stroke-width="26" stroke-linecap="round" />
+  <path d="M220 205 Q190 135 255 125 Q275 165 220 205 Z" fill="#1F5133" />
+  <path d="M390 195 Q425 125 470 155 Q445 200 390 195 Z" fill="#2E6F40" />
+  <text x="300" y="345" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#4A3520">
+    Mature Forest Vine
+  </text>
+</svg>

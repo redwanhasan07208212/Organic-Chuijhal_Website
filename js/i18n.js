@@ -1,0 +1,288 @@
+const I18N_TEXT = {
+  bn: {
+    top_notice:
+      "🌿 বুনো অর্গানিক চুই ঝাল • ফ্যামিলি প্যাকে সারাদেশে ফ্রি ডেলিভারি!",
+    brand_sub: "বুনো চুই ঝাল",
+    nav_story: "উৎস ও গল্প",
+    nav_gallery: "গ্যালারি",
+    nav_benefits: "উপকারিতা",
+    nav_purity: "খাঁটিত্ব পরীক্ষা",
+    nav_packages: "প্যাকেজ",
+    nav_reviews: "রিভিউ",
+    nav_faq: "FAQ",
+    nav_order: "অর্ডার করুন",
+    hero_badge: "✦ প্রাকৃতিক বনাঞ্চল থেকে সংগৃহীত • শতভাগ কেমিক্যালমুক্ত",
+    hero_title: "খাঁটি বুনো চুই ঝালের অনন্য ঘ্রাণ ও প্রাকৃতিক ঝাঁজ",
+    hero_desc:
+      "কৃত্রিম রঙ, প্রিজারভেটিভ বা সস্তা ডাঁটার মিশ্রণ ছাড়াই পরিপক্ক বুনো চুইয়ের লতা-কাণ্ড থেকে বাছাইকৃত খাঁটি চুই ঝাল। গরুর মাংস, হাঁস, মাছ বা ভেষজ চায়ে যোগ করে এক ভিন্ন মাত্রার স্বাদ ও উষ্ণতা।",
+    hero_cta_primary: "এখনই অর্ডার করুন",
+    hero_cta_secondary: "খাঁটি চেনার উপায়",
+    hl_1: "প্রাকৃতিকভাবে বেড়ে ওঠা",
+    hl_2: "সারাদেশে দ্রুত ডেলিভারি",
+    hl_3: "সহজ পেমেন্ট ব্যবস্থা",
+    hero_img_cap: "পরিপক্ক বুনো চুইয়ের খণ্ড • সরাসরি WhatsApp-এ অর্ডার",
+    story_tag: "উৎস ও প্রস্তুত প্রণালী",
+    story_title: "কোথা থেকে আসে ও কীভাবে তৈরি হয় বুনো চুই ঝাল?",
+    story_p1:
+      "আমাদের চুই ঝাল আসে প্রাকৃতিক ছায়া ও আর্দ্র আবহাওয়ায় বেড়ে ওঠা পরিপক্ক বুনো লতা থেকে। কচি ডাঁটার বদলে বয়স্ক ও ঘন শাঁসযুক্ত অংশ বেছে নেওয়া হয়, যাতে এর আসল সুগন্ধ ও ঔষধি গুণ অটুট থাকে।",
+    story_p2:
+      "সংগ্রহের পর পরিষ্কার পানিতে ধুয়ে নির্দিষ্ট মাপে কেটে শুকানো ও বাছাই করা হয়। কোনো রাসায়নিক বা রঙ ব্যবহার না করে হাইজেনিক প্যাকেটে সংরক্ষণ করা হয়।",
+    who_title: "কারা কিনবেন আর কেন কিনবেন?",
+    who_desc:
+      "যাঁরা ঘরোয়া ও ঐতিহ্যবাহী রান্নায় খাঁটি বুনো চুইয়ের ঘ্রাণ চান, যাঁরা শীত বা আবহাওয়া পরিবর্তনে গরম ভেষজ স্যুপ/চা পছন্দ করেন এবং যাঁরা বাজারের ভেজাল ডাঁটা এড়িয়ে নিরাপদ অর্গানিক পণ্য খুঁজছেন।",
+    gal_tag: "প্রোডাক্ট গ্যালারি",
+    gal_title: "আমরা ঠিক কী ধরনের বুনো চুই ঝাল সরবরাহ করি?",
+    gal_sub:
+      "নিচের গ্রিড থেকে প্রোডাক্টের ধরন, কাটিং ও ব্যবহারের রূপ সম্পর্কে স্পষ্ট ধারণা নিন।",
+    gal_1_t: "পরিপক্ক বুনো লতা",
+    gal_1_d: "ঘন শাঁস ও প্রাকৃতিক সুগন্ধি স্তর",
+    gal_2_t: "পরিষ্কার কাটিং পিস",
+    gal_2_d: "রান্নার উপযোগী সুষম খণ্ড",
+    gal_3_t: "ঐতিহ্যবাহী রান্নায় ব্যবহার",
+    gal_3_d: "মাংস, মাছ ও ঝোলের বিশেষ স্বাদ",
+    gal_4_t: "হাইজেনিক প্যাকিং",
+    gal_4_d: "সতেজতা বজায় রেখে ডেলিভারি",
+
+    ben_tag: "উপকারিতা",
+    ben_title: "কেন বুনো চুই ঝাল আপনার রান্নাঘরে থাকা উচিত?",
+    ben_sub:
+      "স্বাদের পাশাপাশি ঐতিহ্যবাহী ভেষজ গুণের কারণে চুই ঝাল অত্যন্ত সমাদৃত।",
+    ben_1_t: "অনন্য প্রাকৃতিক ঘ্রাণ ও স্বাদ",
+    ben_1_d:
+      "সাধারণ মরিচের ঝাঁজের চেয়ে আলাদা—হালকা মিষ্টি-ঝাঁঝালো ভেষজ সুবাস খাবারের স্বাদ কয়েকগুণ বাড়িয়ে দেয়।",
+    ben_2_t: "হজম ও ক্ষুধাবর্ধক গুণ",
+    ben_2_d:
+      "ঐতিহ্যগতভাবে ভারী খাবারের পর হজমে সহায়ক এবং রুচি বাড়াতে উপকারী ভেষজ উপাদান হিসেবে ব্যবহৃত হয়।",
+    ben_3_t: "শরীরের স্বাভাবিক উষ্ণতা",
+    ben_3_d:
+      "শীতল বা বৃষ্টির দিনে উষ্ণ ঝোল বা স্যুপে বুনো চুই ঝাল আরামদায়ক ও সতেজ অনুভূতি দেয়।",
+    dish_title: "চুই ঝাল দিয়ে রান্না করা মজাদার পদ",
+    dish_sub:
+      "বুনো চুই ঝালের ঝাঁজ ও সুবাসে জমে ওঠা কয়েকটি ঘরোয়া পদ (পরিবেশনের নমুনা ছবি)।",
+    dish_1_t: "গরুর মাংসের ঝোল",
+    dish_1_d: "ঘন মশলায় নরম মাংস, কাঠের বাটিতে",
+    dish_2_t: "ঝাল গরুর কারি",
+    dish_2_d: "শুকনো মরিচ ও গরম মশলার ঝাঁজ",
+    dish_3_t: "গরুর ভুনা",
+    dish_3_d: "কষানো মাংসে মিশে যায় চুইয়ের সুবাস",
+    dish_4_t: "ঝাল গরুর ফ্রাই",
+    dish_4_d: "পেঁয়াজ ও কাঁচা মরিচের সাথে",
+    pur_tag: "খাঁটিত্ব ও পার্থক্য",
+    pur_title: "খাঁটি চুই চেনার উপায় ও বাজারের ভেজালের সাথে পার্থক্য",
+    pur_sub:
+      "অল্প একটু সচেতনতায় আপনি কচি বা ভেজাল ডাঁটার বদলে আসল বুনো চুই চিনতে পারবেন।",
+    pure_badge: "✓ খাঁটি বুনো চুই ঝাল",
+    pure_title: "আমাদের বাছাইকৃত প্রোডাক্ট",
+    pure_1:
+      "🌿 <strong>ঘন ও শক্ত কাণ্ড:</strong> নরম কচি ডাঁটার বদলে পরিপক্ক অংশ, যা রান্নায় গলে না গিয়ে স্বাদ ছড়ায়।",
+    pure_2:
+      "👃 <strong>তীব্র নিজস্ব সুবাস:</strong> কাটার পর বা গরম করলে প্রাকৃতিক ভেষজ ঘ্রাণ স্পষ্ট বোঝা যায়।",
+    pure_3:
+      "🎨 <strong>প্রাকৃতিক রঙ:</strong> কোনো কৃত্রিম রঙ বা পালিশ ছাড়া স্বাভাবিক বুনো রঙ।",
+    pure_4:
+      "⚖️ <strong>সুষম ওজন ও মান:</strong> অপ্রয়োজনীয় নরম অংশ ছাড়া ব্যবহারযোগ্য খণ্ড।",
+    bad_badge: "✕ বাজারের নিম্নমানের / ভেজাল ডাঁটা",
+    bad_title: "সাধারণত যে সমস্যাগুলো দেখা যায়",
+    bad_1:
+      "⚠️ <strong>অতিরিক্ত কচি ডাঁটা:</strong> দ্রুত নরম হয়ে যায় এবং আসল ঘ্রাণ বা ঝাঁজ কম থাকে।",
+    bad_2:
+      "⚠️ <strong>অন্য লতা বা ডাঁটার মিশ্রণ:</strong> ওজন বাড়াতে সস্তা বা ভিন্ন গাছের অংশ মেশানোর ঝুঁকি থাকে।",
+    bad_3:
+      "⚠️ <strong>বাসি বা স্যাঁতসেঁতে অবস্থা:</strong> সঠিকভাবে না শুকালে ঘ্রাণ নষ্ট হয়ে যায়।",
+    bad_4:
+      "⚠️ <strong>কেমিক্যাল বা রঙের ঝুঁকি:</strong> চকচকে বা রঙিন দেখানোর অস্বাস্থ্যকর প্রবণতা।",
+    pkg_tag: "প্যাকেজ ও দাম",
+    pkg_title: "প্যাকেজ সাইজ ও অফার বেছে নিন",
+    pkg_sub:
+      "যেকোনো প্যাকেজ সিলেক্ট করে নিচের ফর্ম থেকে সরাসরি WhatsApp-এ অর্ডার করুন।",
+    rev_tag: "কাস্টমার রিভিউ",
+    rev_title: "ক্রেতাদের অভিজ্ঞতা",
+    rev_sub: "যাঁরা আমাদের বুনো চুই ঝাল ব্যবহার করেছেন তাঁদের মতামত।",
+    faq_tag: "FAQ",
+    faq_title: "সচরাচর জিজ্ঞাসিত প্রশ্ন",
+    faq_1_q: "রান্নায় চুই ঝাল কীভাবে ও কখন দেব?",
+    faq_1_a:
+      "মাংস বা মাছ কষানোর মাঝামাঝি সময়ে পরিষ্কার করা চুইয়ের টুকরোগুলো দিয়ে দিন। ধীরে ধীরে কষালে এর ঘ্রাণ ও স্বাদ খাবারে ভালোভাবে মিশে যায়।",
+    faq_2_q: "ডেলিভারি চার্জ ও ডেলিভারি সময় কত?",
+    faq_2_a:
+      "ফ্যামিলি প্যাকে ডেলিভারি সম্পূর্ণ ফ্রি। স্টার্টার প্যাকে ঢাকার ভেতরে ৬০ টাকা এবং ঢাকার বাইরে ১২০ টাকা ডেলিভারি চার্জ প্রযোজ্য। সাধারণত ২–৪ কার্যদিবসের মধ্যে ডেলিভারি হয়।",
+    faq_3_q: "কোন কোন পেমেন্ট মাধ্যমে অর্ডার করা যাবে?",
+    faq_3_a:
+      "আপনি ক্যাশ অন ডেলিভারি (COD), বিকাশ (bKash) এবং নগদ (Nagad)—এই ৩টি মাধ্যমের যেকোনো একটি বেছে নিয়ে অর্ডার করতে পারবেন।",
+    faq_4_q: "অর্ডার করলে কি সরাসরি WhatsApp-এ যাবে?",
+    faq_4_a:
+      "হ্যাঁ! ফর্ম পূরণ করে সাবমিট করলে আপনার অর্ডারের বিস্তারিত তথ্যসহ সরাসরি আমাদের WhatsApp (01853940963) চ্যাট ওপেন হবে।",
+    ord_tag: "অর্ডার করুন",
+    ord_title: "অর্ডার ফর্ম পূরণ করুন",
+    ord_sub:
+      "তথ্য দিয়ে সাবমিট করলেই আপনার অর্ডার বার্তা সরাসরি WhatsApp-এ (01853940963) চলে যাবে।",
+    lbl_area: "ডেলিভারি এলাকা *",
+    ord_panel_title: "আপনার রান্নাঘরে বুনো চুইয়ের স্বাদ",
+    ord_panel_sub: "ছোট একটা ফর্ম পূরণ করুন, বাকিটা আমরা WhatsApp-এ সামলে নেব।",
+    ord_pt_1: "ফর্ম পূরণ করলেই অর্ডার বার্তা তৈরি হয়ে যায়",
+    ord_pt_2: "ক্যাশ অন ডেলিভারি, বিকাশ বা নগদে পেমেন্ট",
+    ord_pt_3: "সাধারণত ২–৪ কার্যদিবসে ডেলিভারি",
+    ord_pt_4: "ফ্যামিলি প্যাকে সারাদেশে ফ্রি ডেলিভারি",
+    ord_s1: "১. আপনার তথ্য",
+    ord_s2: "২. প্যাকেজ ও ডেলিভারি",
+    ord_s3: "৩. পেমেন্ট",
+    lbl_name: "আপনার নাম *",
+    lbl_phone: "মোবাইল নম্বর *",
+    lbl_package: "প্যাকেজ নির্বাচন করুন *",
+    opt_dhaka: "ঢাকা সিটির ভেতরে",
+    opt_outside: "ঢাকার বাইরে",
+    lbl_address: "সম্পূর্ণ ডেলিভারি ঠিকানা *",
+    lbl_payment: "পেমেন্ট মাধ্যম *",
+    pay_cod: "ক্যাশ অন ডেলিভারি",
+    pay_cod_sub: "হাতে পেয়ে পেমেন্ট",
+    pay_dig_sub: "সেন্ড মানি / পেমেন্ট",
+    lbl_sender: "যে নম্বর থেকে টাকা পাঠিয়েছেন *",
+    lbl_trx: "Transaction ID (TrxID) *",
+    sum_total: "মোট বিল:",
+    btn_whatsapp_order: "WhatsApp-এ অর্ডার পাঠান",
+    footer_desc: "খাঁটি বুনো চুই ঝাল সরাসরি আপনার দরজায়।",
+    wa_btn: "WhatsApp",
+  },
+  en: {
+    top_notice:
+      "🌿 Wild Organic Chui Jhal • Free Nationwide Delivery on Family Pack!",
+    brand_sub: "Wild Chui Jhal",
+    nav_story: "Origin & Story",
+    nav_gallery: "Gallery",
+    nav_benefits: "Benefits",
+    nav_purity: "Purity Test",
+    nav_packages: "Packages",
+    nav_reviews: "Reviews",
+    nav_faq: "FAQ",
+    nav_order: "Order Now",
+    hero_badge: "✦ Harvested from Natural Forests • 100% Chemical-Free",
+    hero_title: "Authentic Wild Chui Jhal Aroma & Natural Warmth",
+    hero_desc:
+      "Hand-selected mature wild Chui Jhal stems with zero artificial dyes, preservatives, or cheap fillers. Elevates beef, duck, fish curries, and warm herbal broths.",
+    hero_cta_primary: "Order Now",
+    hero_cta_secondary: "How to Spot Pure",
+    hl_1: "Naturally Grown",
+    hl_2: "Fast Nationwide Delivery",
+    hl_3: "Easy Payment Options",
+    hero_img_cap: "Mature Wild Chui Cuts • Direct WhatsApp Ordering",
+    story_tag: "Origin & Process",
+    story_title: "Where Does Wild Chui Jhal Come From & How Is It Prepared?",
+    story_p1:
+      "Our Chui Jhal comes from mature wild vines grown in shaded, humid forest environments. Dense, mature sections are chosen over tender shoots to preserve genuine aroma and potency.",
+    story_p2:
+      "After washing in clean water, stems are neatly cut, dried, sorted, and packed hygienically without any synthetic dyes or chemicals.",
+    who_title: "Who Should Buy & Why?",
+    who_desc:
+      "Home cooks seeking traditional regional flavor, families wanting warming broths during cooler weather, and buyers avoiding unverified or overly soft market stems.",
+    gal_tag: "Product Gallery",
+    gal_title: "What Kind of Wild Chui Jhal Do We Supply?",
+    gal_sub:
+      "Explore the product cuts, natural texture, and culinary use across the grid below.",
+    gal_1_t: "Mature Wild Vine",
+    gal_1_d: "Dense core & natural aromatic layers",
+    gal_2_t: "Clean Cut Pieces",
+    gal_2_d: "Even cooking-ready cuts",
+    gal_3_t: "Traditional Cooking",
+    gal_3_d: "Rich flavor for meats & curries",
+    gal_4_t: "Hygienic Packaging",
+    gal_4_d: "Sealed for freshness on arrival",
+    dish_title: "Dishes Made with Wild Chui Jhal",
+    dish_sub:
+      "A few home-style dishes that come alive with the heat and aroma of wild Chui Jhal (serving suggestion photos).",
+    dish_1_t: "Beef Curry",
+    dish_1_d: "Tender beef in a rich gravy",
+    dish_2_t: "Spicy Beef Curry",
+    dish_2_d: "Red chili and whole-spice warmth",
+    dish_3_t: "Beef Bhuna",
+    dish_3_d: "Slow-cooked until the aroma sinks in",
+    dish_4_t: "Spicy Beef Fry",
+    dish_4_d: "With onion and fresh chili",
+    ben_tag: "Benefits",
+    ben_title: "Why Keep Wild Chui Jhal in Your Kitchen?",
+    ben_sub:
+      "Valued both for culinary character and traditional herbal appeal.",
+    ben_1_t: "Distinct Natural Aroma",
+    ben_1_d:
+      "Different from plain chili heat—delivers a warm, slightly sweet herbal fragrance to dishes.",
+    ben_2_t: "Digestive & Appetite Appeal",
+    ben_2_d:
+      "Traditionally used in hearty meals to complement digestion and appetite.",
+    ben_3_t: "Comforting Warmth",
+    ben_3_d: "Ideal for warm broths and curries during cool or rainy days.",
+    pur_tag: "Purity & Comparison",
+    pur_title: "How to Spot Pure Chui vs. Inferior Market Stems",
+    pur_sub:
+      "A quick look at what separates genuine mature cuts from low-grade alternatives.",
+    pure_badge: "✓ Pure Wild Chui Jhal",
+    pure_title: "Our Selected Product",
+    pure_1:
+      "🌿 <strong>Dense Mature Stem:</strong> Firm, mature pieces rather than overly soft shoots that mash apart too quickly.",
+    pure_2:
+      "👃 <strong>Distinct Herbal Scent:</strong> Clear natural aroma when cut or simmered.",
+    pure_3:
+      "🎨 <strong>Natural Color:</strong> Uncoated natural tone with zero artificial coloring.",
+    pure_4:
+      "⚖️ <strong>Clean Usable Cuts:</strong> Carefully sorted pieces without excess waste.",
+    bad_badge: "✕ Low-Grade / Adulterated Stems",
+    bad_title: "Common Issues to Watch Out For",
+    bad_1:
+      "⚠️ <strong>Overly Tender Shoots:</strong> Turn mushy fast with milder aroma.",
+    bad_2:
+      "⚠️ <strong>Mixed Stems:</strong> Risk of unrelated or cheaper stems added for weight.",
+    bad_3:
+      "⚠️ <strong>Damp or Stale Stock:</strong> Poor drying reduces freshness and scent.",
+    bad_4:
+      "⚠️ <strong>Unhealthy Additives:</strong> Avoid glossy or artificially tinted stock.",
+    pkg_tag: "Packages & Pricing",
+    pkg_title: "Choose Package Size & Offer",
+    pkg_sub:
+      "Pick a package and submit the form below to order directly on WhatsApp.",
+    rev_tag: "Customer Reviews",
+    rev_title: "What Buyers Say",
+    rev_sub: "Feedback from customers who ordered our wild Chui Jhal.",
+    faq_tag: "FAQ",
+    faq_title: "Frequently Asked Questions",
+    faq_1_q: "How and when should I add Chui Jhal while cooking?",
+    faq_1_a:
+      "Add cleaned pieces mid-way while bhuna/simmering meat or fish so the natural flavor infuses gradually.",
+    faq_2_q: "What are the delivery charges and delivery times?",
+    faq_2_a:
+      "Delivery is free on the Family Pack. Starter Pack has a ৳60 charge inside Dhaka and ৳120 outside Dhaka, typically delivered in 2–4 business days.",
+    faq_3_q: "Which payment methods are available?",
+    faq_3_a: "You can order using Cash on Delivery (COD), bKash, or Nagad.",
+    faq_4_q: "Will submitting the form redirect to WhatsApp?",
+    faq_4_a:
+      "Yes! Submitting the form opens a pre-filled WhatsApp order message directly to 01853940963.",
+    ord_tag: "Order Now",
+    ord_title: "Complete the Order Form",
+    ord_sub:
+      "Submit the form to send your order directly to WhatsApp (01853940963).",
+    lbl_area: "Delivery Area *",
+    ord_panel_title: "Bring the Wild Chui Jhal Flavor Home",
+    ord_panel_sub:
+      "Fill in one short form and we’ll take care of the rest on WhatsApp.",
+    ord_pt_1: "Your order message is prepared as soon as you submit",
+    ord_pt_2: "Pay by Cash on Delivery, bKash or Nagad",
+    ord_pt_3: "Usually delivered in 2–4 business days",
+    ord_pt_4: "Free nationwide delivery on Family Packs",
+    ord_s1: "1. Your details",
+    ord_s2: "2. Package & delivery",
+    ord_s3: "3. Payment",
+    lbl_name: "Your Name *",
+    lbl_phone: "Mobile Number *",
+    lbl_package: "Select Package *",
+    opt_dhaka: "Inside Dhaka City",
+    opt_outside: "Outside Dhaka",
+    lbl_address: "Full Delivery Address *",
+    lbl_payment: "Payment Method *",
+    pay_cod: "Cash on Delivery",
+    pay_cod_sub: "Pay on delivery",
+    pay_dig_sub: "Send Money / Payment",
+    lbl_sender: "Sender Mobile Number *",
+    lbl_trx: "Transaction ID (TrxID) *",
+    sum_total: "Total Bill:",
+    btn_whatsapp_order: "Send Order on WhatsApp",
+    footer_desc: "Authentic wild Chui Jhal delivered to your door.",
+    wa_btn: "WhatsApp",
+  },
+};
