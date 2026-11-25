@@ -1,7 +1,107 @@
+let activeGalleryFilter = "all";
+
 function formatMoney(amount) {
   return activeLang === "bn"
     ? `৳${amount.toLocaleString("bn-BD")}`
     : `৳${amount.toLocaleString("en-US")}`;
+}
+
+function renderGallery() {
+  const container = document.getElementById("galleryContainer");
+  if (!container || !Array.isArray(SITE_CONFIG.gallery)) return;
+
+  const filteredItems =
+    activeGalleryFilter === "all"
+      ? SITE_CONFIG.gallery
+      : SITE_CONFIG.gallery.filter(
+          (item) => item.category === activeGalleryFilter,
+        );
+
+  container.innerHTML = filteredItems
+    .map((item, idx) => {
+      const text = item[activeLang] || item.bn;
+      const isFeatured = idx === 0 && activeGalleryFilter === "all";
+      const featuredLabel = activeLang === "bn" ? "★ সেরা পছন্দ" : "★ Top Pick";
+
+      return `
+        <figure class="gallery-card ${isFeatured ? "featured-recipe-card" : ""}">
+          <div class="gallery-img-box">
+            <img src="${item.image}" alt="${text.title}" loading="lazy" />
+            <span class="gallery-badge">${text.tag}</span>
+            ${isFeatured ? `<span class="gallery-ribbon">${featuredLabel}</span>` : ""}
+          </div>
+          <figcaption>
+            <strong>${text.title}</strong>
+            <span>${text.desc}</span>
+            <button
+              type="button"
+              class="gallery-order-link"
+              data-pack="${item.recommendedPack || "family-1000"}"
+              data-img="${item.image}"
+            >
+              ${text.cta}
+            </button>
+          </figcaption>
+        </figure>
+      `;
+    })
+    .join("");
+
+  container.querySelectorAll(".gallery-order-link").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const select = document.getElementById("packageSelect");
+      const orderImg = document.getElementById("orderShowcaseImg");
+
+      if (select && btn.dataset.pack) {
+        select.value = btn.dataset.pack;
+        updateOrderSummary();
+      }
+      if (orderImg && btn.dataset.img) {
+        orderImg.src = btn.dataset.img;
+        orderImg.dataset.userPicked = "true";
+      }
+
+      document.getElementById("order")?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}
+
+function initGalleryFilters() {
+  const filterWrap = document.getElementById("galleryFilters");
+  if (!filterWrap) return;
+
+  filterWrap.querySelectorAll(".filter-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      filterWrap
+        .querySelectorAll(".filter-chip")
+        .forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      activeGalleryFilter = chip.dataset.filter || "all";
+      renderGallery();
+    });
+  });
+}
+
+function renderOrderShowcase() {
+  const showcase = SITE_CONFIG.orderShowcase;
+  if (!showcase) return;
+
+  const imgEl = document.getElementById("orderShowcaseImg");
+  const badgeEl = document.getElementById("orderSideBadge");
+  const titleEl = document.getElementById("orderSideTitle");
+  const descEl = document.getElementById("orderSideDesc");
+  const pointsEl = document.getElementById("orderSidePoints");
+
+  const info = showcase[activeLang] || showcase.bn;
+  if (imgEl && showcase.image && !imgEl.dataset.userPicked) {
+    imgEl.src = showcase.image;
+  }
+  if (badgeEl) badgeEl.textContent = info.badge;
+  if (titleEl) titleEl.textContent = info.title;
+  if (descEl) descEl.textContent = info.desc;
+  if (pointsEl && Array.isArray(info.points)) {
+    pointsEl.innerHTML = info.points.map((pt) => `<li>${pt}</li>`).join("");
+  }
 }
 
 function renderPackages() {
@@ -169,6 +269,9 @@ function buildWhatsAppUrl(orderData) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initGalleryFilters();
+  renderGallery();
+  renderOrderShowcase();
   renderPackages();
   renderReviews();
   updateOrderSummary();
@@ -196,6 +299,8 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   document.addEventListener("languageChanged", () => {
+    renderGallery();
+    renderOrderShowcase();
     renderPackages();
     renderReviews();
     updateOrderSummary();

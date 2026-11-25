@@ -50,7 +50,7 @@
         <nav class="nav-menu" id="navMenu">
           <a href="#story" class="nav-link" data-i18n="nav_story">উৎস ও গল্প</a>
           <a href="#gallery" class="nav-link" data-i18n="nav_gallery"
-            >গ্যালারি</a
+            >রেসিপি গ্যালারি</a
           >
           <a href="#benefits" class="nav-link" data-i18n="nav_benefits"
             >উপকারিতা</a
@@ -117,8 +117,8 @@
           </h1>
           <p class="hero-desc" data-i18n="hero_desc">
             কৃত্রিম রঙ, প্রিজারভেটিভ বা সস্তা ডাঁটার মিশ্রণ ছাড়াই পরিপক্ক বুনো
-            চুইয়ের লতা-কাণ্ড থেকে বাছাইকৃত খাঁটি চুই ঝাল। গরুর মাংস, হাঁস, মাছ
-            বা ভেষজ চায়ে যোগ করে এক ভিন্ন মাত্রার স্বাদ ও উষ্ণতা।
+            চুইয়ের লতা-কাণ্ড থেকে বাছাইকৃত খাঁটি চুই ঝাল। গরুর মাংস, খাসি, হাঁস
+            বা ভুনা কারিতে যোগ করে এক রাজকীয় স্বাদ ও উষ্ণতা।
           </p>
 
           <div class="hero-actions">
@@ -132,7 +132,7 @@
               href="#gallery"
               class="btn btn-outline btn-lg"
               data-i18n="hero_cta_secondary"
-              >ইমেজ গ্যালারি দেখুন</a
+              >চুই ঝালের রেসিপি দেখুন</a
             >
           </div>
 
@@ -156,14 +156,12 @@
 
         <div class="hero-media fade-up delay-1">
           <div class="hero-card float-anim">
-            <img
-              src="images/hero-chui.svg"
-              alt="Bonoj Chui Jhal Illustration"
-            />
+            <img src="images/chuijhal-2.webp" alt="রাজকীয় চুই ঝাল বিফ কারি" />
             <div class="hero-caption">
               <span class="dot"></span>
               <span data-i18n="hero_img_cap"
-                >পরিপক্ক বুনো চুইয়ের খণ্ড • সরাসরি WhatsApp-এ অর্ডার</span
+                >খাঁটি বুনো চুই ঝালে তৈরি স্পেশাল ভুনা কারি • WhatsApp
+                অর্ডার</span
               >
             </div>
           </div>
@@ -175,7 +173,10 @@
     <section id="story" class="section section-alt">
       <div class="container story-grid">
         <div class="story-visual reveal">
-          <img src="images/raw-stem.svg" alt="Wild Chui Vine Origin" />
+          <img
+            src="images/organic-1.jpg"
+            alt="অর্গানিক প্রাকৃতিক মশলা ও ভেষজ উপাদান"
+          />
         </div>
         <div class="story-content reveal">
           <span class="tag" data-i18n="story_tag">উৎস ও প্রস্তুত প্রণালী</span>
@@ -196,139 +197,48 @@
             <h3 data-i18n="who_title">কারা কিনবেন আর কেন কিনবেন?</h3>
             <p data-i18n="who_desc">
               যাঁরা ঘরোয়া ও ঐতিহ্যবাহী রান্নায় খাঁটি বুনো চুইয়ের ঘ্রাণ চান,
-              যাঁরা শীত বা আবহাওয়া পরিবর্তনে গরম ভেষজ স্যুপ/চা পছন্দ করেন এবং
-              যাঁরা বাজারের ভেজাল ডাঁটা এড়িয়ে নিরাপদ অর্গানিক পণ্য খুঁজছেন।
+              যাঁরা মাংস ভুনা বা ঝোলে রেস্টুরেন্ট-মানের স্বাদ আনতে চান এবং যাঁরা
+              বাজারের ভেজাল ডাঁটা এড়িয়ে নিরাপদ অর্গানিক পণ্য খুঁজছেন।
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Gallery Grid Section -->
-    <!-- Gallery section: replace your whole <section id="gallery"> with this.
-         It keeps your original 4 product cards and adds a second grid with the 4 real dish photos. -->
+    <!-- Unique Culinary Recipe & Organic Photo Gallery Section -->
     <section id="gallery" class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="tag" data-i18n="gal_tag">ইমেজ গ্যালারি</span>
-          <h2 data-i18n="gal_title">আমাদের বুনো চুই ঝালের ধরন ও ব্যবহার</h2>
+          <span class="tag" data-i18n="gal_tag"
+            >চুই ঝালের রেসিপি ও গ্যালারি</span
+          >
+          <h2 data-i18n="gal_title">
+            খাঁটি চুই ঝাল দিয়ে তৈরি জনপ্রিয় পদ ও অর্গানিক উপাদান
+          </h2>
           <p data-i18n="gal_sub">
-            নিচের গ্রিড থেকে প্রোডাক্টের কাটিং, প্রাকৃতিক রূপ ও রান্নার ব্যবহার
-            দেখুন।
+            যেকোনো পদ বেছে নিয়ে ক্লিক করলেই নিচের অর্ডার ফর্মে সেই অনুযায়ী
+            প্যাকেজ ও ছবি সেট হয়ে যাবে।
           </p>
+
+          <div
+            class="gallery-filters"
+            id="galleryFilters"
+            role="tablist"
+            aria-label="Gallery Filter"
+          >
+            <button type="button" class="filter-chip active" data-filter="all">
+              সব দেখুন
+            </button>
+            <button type="button" class="filter-chip" data-filter="recipe">
+              চুই ঝালের রেসিপি
+            </button>
+            <button type="button" class="filter-chip" data-filter="organic">
+              অর্গানিক উপাদান
+            </button>
+          </div>
         </div>
 
-        <!-- Grid 1: your original product cards (unchanged) -->
-        <div class="gallery-grid">
-          <figure class="gallery-card reveal">
-            <img src="images/raw-stem.svg" alt="Mature Chui Vine" />
-            <figcaption>
-              <strong data-i18n="gal_1_t">পরিপক্ক বুনো লতা</strong>
-              <span data-i18n="gal_1_d">ঘন শাঁস ও প্রাকৃতিক সুগন্ধি স্তর</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <img src="images/sliced-chui.svg" alt="Clean Cut Chui Pieces" />
-            <figcaption>
-              <strong data-i18n="gal_2_t">পরিষ্কার কাটিং পিস</strong>
-              <span data-i18n="gal_2_d">রান্নার উপযোগী সুষম খণ্ড</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <img src="images/culinary-pot.svg" alt="Chui Jhal in Cooking" />
-            <figcaption>
-              <strong data-i18n="gal_3_t">ঐতিহ্যবাহী রান্নায় ব্যবহার</strong>
-              <span data-i18n="gal_3_d">মাংস, মাছ ও ঝোলের বিশেষ স্বাদ</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <img src="images/hero-chui.svg" alt="Hygienic Pack Selection" />
-            <figcaption>
-              <strong data-i18n="gal_4_t">হাইজেনিক প্যাকিং</strong>
-              <span data-i18n="gal_4_d">সতেজতা বজায় রেখে ডেলিভারি</span>
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- Grid 2: NEW, real dish photos -->
-        <div class="gallery-subhead reveal">
-          <h3 data-i18n="dish_title">চুই ঝাল দিয়ে রান্না করা মজাদার পদ</h3>
-          <p data-i18n="dish_sub">
-            বুনো চুই ঝালের ঝাঁজ ও সুবাসে জমে ওঠা কয়েকটি ঘরোয়া পদ (পরিবেশনের
-            নমুনা ছবি)।
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <figure class="gallery-card reveal">
-            <div class="gallery-photo">
-              <img
-                src="images/chuijhal-1.webp"
-                alt="Beef curry in a wooden bowl"
-                width="900"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <figcaption>
-              <strong data-i18n="dish_1_t">গরুর মাংসের ঝোল</strong>
-              <span data-i18n="dish_1_d">ঘন মশলায় নরম মাংস, কাঠের বাটিতে</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <div class="gallery-photo">
-              <img
-                src="images/chuijhal-2.webp"
-                alt="Spicy red beef curry with chili and star anise"
-                width="900"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <figcaption>
-              <strong data-i18n="dish_2_t">ঝাল গরুর কারি</strong>
-              <span data-i18n="dish_2_d">শুকনো মরিচ ও গরম মশলার ঝাঁজ</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <div class="gallery-photo">
-              <img
-                src="images/chuijhal-3.webp"
-                alt="Beef bhuna on a black plate"
-                width="900"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <figcaption>
-              <strong data-i18n="dish_3_t">গরুর ভুনা</strong>
-              <span data-i18n="dish_3_d"
-                >কষানো মাংসে মিশে যায় চুইয়ের সুবাস</span
-              >
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal">
-            <div class="gallery-photo">
-              <img
-                src="images/chuijhal-4.webp"
-                alt="Spicy beef fry with onion and fresh chili"
-                width="900"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <figcaption>
-              <strong data-i18n="dish_4_t">ঝাল গরুর ফ্রাই</strong>
-              <span data-i18n="dish_4_d">পেঁয়াজ ও কাঁচা মরিচের সাথে</span>
-            </figcaption>
-          </figure>
-        </div>
+        <div class="gallery-grid gallery-grid-6" id="galleryContainer"></div>
       </div>
     </section>
 
@@ -359,8 +269,8 @@
             <div class="card-icon">🌱</div>
             <h3 data-i18n="ben_2_t">হজম ও ক্ষুধাবর্ধক গুণ</h3>
             <p data-i18n="ben_2_d">
-              ঐতিহ্যগতভাবে ভারী খাবারের পর হজমে সহায়ক এবং রুচি বাড়াতে উপকারী
-              ভেষজ উপাদান হিসেবে ব্যবহৃত হয়।
+              ঐতিহ্যগতভাবে ভারী মাংসজাতীয় খাবারের পর হজমে সহায়ক এবং রুচি বাড়াতে
+              উপকারী ভেষজ উপাদান হিসেবে ব্যবহৃত হয়।
             </p>
           </article>
 
@@ -530,67 +440,50 @@
       </div>
     </section>
 
-    <!-- Order Section -->
-
+    <!-- Order Section (Side-by-Side Real Dish Photo + Order Form) -->
     <section id="order" class="section">
       <div class="container">
         <div class="section-head reveal">
           <span class="tag" data-i18n="ord_tag">অর্ডার করুন</span>
           <h2 data-i18n="ord_title">অর্ডার ফর্ম পূরণ করুন</h2>
           <p data-i18n="ord_sub">
-            তথ্য দিয়ে সাবমিট করলেই আপনার অর্ডার বার্তা সরাসরি WhatsApp-এ
-            (01853940963) চলে যাবে।
+            নিজের নাম, নম্বর ও ঠিকানা দিয়ে সাবমিট করলেই সরাসরি WhatsApp
+            (01853940963)-এ অর্ডার বার্তা চলে যাবে।
           </p>
         </div>
 
-        <div class="order-layout">
-          <!-- Picture panel -->
-          <aside class="order-aside reveal">
-            <img
-              src="images/order-dish.webp"
-              alt="Beef curry cooked with wild Chui Jhal"
-              width="900"
-              height="900"
-              loading="lazy"
-            />
-            <h3 data-i18n="ord_panel_title">
-              আপনার রান্নাঘরে বুনো চুইয়ের স্বাদ
-            </h3>
-            <p data-i18n="ord_panel_sub">
-              ছোট একটা ফর্ম পূরণ করুন, বাকিটা আমরা WhatsApp-এ সামলে নেব।
-            </p>
-            <ul class="order-points">
-              <li>
-                <span class="tick">✓</span>
-                <span data-i18n="ord_pt_1"
-                  >ফর্ম পূরণ করলেই অর্ডার বার্তা তৈরি হয়ে যায়</span
-                >
-              </li>
-              <li>
-                <span class="tick">✓</span>
-                <span data-i18n="ord_pt_2"
-                  >ক্যাশ অন ডেলিভারি, বিকাশ বা নগদে পেমেন্ট</span
-                >
-              </li>
-              <li>
-                <span class="tick">✓</span>
-                <span data-i18n="ord_pt_3"
-                  >সাধারণত ২–৪ কার্যদিবসে ডেলিভারি</span
-                >
-              </li>
-              <li>
-                <span class="tick">✓</span>
-                <span data-i18n="ord_pt_4"
-                  >ফ্যামিলি প্যাকে সারাদেশে ফ্রি ডেলিভারি</span
-                >
-              </li>
-            </ul>
+        <div class="order-layout reveal">
+          <!-- Left Side: Real Product/Dish Photo & Highlights -->
+          <aside class="order-side-card">
+            <div class="order-side-img-wrap">
+              <img
+                id="orderShowcaseImg"
+                src="images/order-dish.webp"
+                alt="চুই ঝাল স্পেশাল ডিশ"
+              />
+            </div>
+            <div class="order-side-body">
+              <span class="pill" id="orderSideBadge">
+                সরাসরি WhatsApp অর্ডার • 01853940963
+              </span>
+              <h3 id="orderSideTitle">
+                খাঁটি বুনো চুই ঝাল আপনার রান্নাঘরের জন্য
+              </h3>
+              <p id="orderSideDesc">
+                পছন্দের প্যাকেজ বেছে ফর্ম সাবমিট করলেই অর্ডারের সম্পূর্ণ বিবরণসহ
+                সরাসরি WhatsApp চ্যাট ওপেন হবে।
+              </p>
+              <ul class="order-side-points" id="orderSidePoints">
+                <li>✓ ১ কেজি ও ২ কেজি প্যাকে সারাদেশে ফ্রি ডেলিভারি</li>
+                <li>✓ ক্যাশ অন ডেলিভারি, বিকাশ ও নগদ সুবিধা</li>
+                <li>✓ পরিষ্কার বাছাই ও হাইজেনিক প্যাকিং</li>
+              </ul>
+            </div>
           </aside>
 
-          <!-- Form -->
-          <div class="order-card reveal">
+          <!-- Right Side: Order Form -->
+          <div class="order-card">
             <form id="orderForm">
-              <h3 class="form-step" data-i18n="ord_s1">১. আপনার তথ্য</h3>
               <div class="form-row two-col">
                 <div class="form-group">
                   <label for="customerName" data-i18n="lbl_name"
@@ -599,9 +492,9 @@
                   <input
                     type="text"
                     id="customerName"
+                    value=""
                     required
-                    autocomplete="name"
-                    placeholder="আপনার পুরো নাম"
+                    placeholder="যেমন: রেদওয়ান হাসান"
                   />
                 </div>
 
@@ -612,17 +505,13 @@
                   <input
                     type="tel"
                     id="customerPhone"
+                    value=""
                     required
-                    inputmode="tel"
-                    autocomplete="tel"
                     placeholder="01XXXXXXXXX"
                   />
                 </div>
               </div>
 
-              <h3 class="form-step" data-i18n="ord_s2">
-                ২. প্যাকেজ ও ডেলিভারি
-              </h3>
               <div class="form-row two-col">
                 <div class="form-group">
                   <label for="packageSelect" data-i18n="lbl_package"
@@ -652,14 +541,12 @@
                 >
                 <textarea
                   id="customerAddress"
-                  rows="3"
+                  rows="2"
                   required
-                  autocomplete="street-address"
                   placeholder="বাসা/রোড, এলাকা, থানা ও জেলা লিখুন"
                 ></textarea>
               </div>
 
-              <h3 class="form-step" data-i18n="ord_s3">৩. পেমেন্ট</h3>
               <!-- 3 Payment Options: COD, bKash, Nagad -->
               <div class="form-group">
                 <label data-i18n="lbl_payment">পেমেন্ট মাধ্যম *</label>
@@ -724,7 +611,7 @@
                     <input
                       type="tel"
                       id="senderWallet"
-                      inputmode="tel"
+                      value="01853940963"
                       placeholder="01XXXXXXXXX"
                     />
                   </div>
@@ -735,7 +622,7 @@
                     <input
                       type="text"
                       id="trxId"
-                      autocomplete="off"
+                      value="TRX982410"
                       placeholder="যেমন: 8N4K9L2P"
                     />
                   </div>
@@ -748,7 +635,9 @@
                   <span data-i18n="sum_total">মোট বিল:</span>
                   <small id="summaryMeta" class="summary-meta"></small>
                 </div>
-                <strong id="grandTotalDisplay" class="grand-total">৳০</strong>
+                <strong id="grandTotalDisplay" class="grand-total"
+                  >৳১,৬৫০</strong
+                >
               </div>
 
               <button
